@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.BIG-CONTAINER {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.BIG-CONTAINER .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.BIG-CONTAINER .FIRST-HEADER,
+.BIG-CONTAINER .SECOND-HEADER,
+.BIG-CONTAINER .THIRD-LINE,
+.BIG-CONTAINER .FOURTH-LINE,
+.BIG-CONTAINER .FIFTH-LINE {
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin: 10px 0;
+}
+
+.BIG-CONTAINER .FIRST-HEADER h1 {
+    font-size: 5em;
+    margin-bottom: 1px;
+}
+
+.BIG-CONTAINER .SECOND-HEADER h6 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.BIG-CONTAINER .THIRD-LINE {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.BIG-CONTAINER .THIRD-LINE .DAYS,
+.BIG-CONTAINER .THIRD-LINE .HOURS,
+.BIG-CONTAINER .THIRD-LINE .MINUTES,
+.BIG-CONTAINER .THIRD-LINE .SECONDS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BIG-CONTAINER .THIRD-LINE .NUMBER {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.BIG-CONTAINER .THIRD-LINE .TEXT {
+    font-size: 2em;
+}
+
+.BIG-CONTAINER .FOURTH-LINE h6 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.BIG-CONTAINER .EMAIL-INPUT-BOX {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.BIG-CONTAINER .EMAIL-INPUT-BOX input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.BIG-CONTAINER .EMAIL-INPUT-BOX button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
